@@ -1,0 +1,15 @@
+approveEachEnv: false
+deploymentStrategy: waves
+doRollback: true
+
+image:
+  tag: blue
+
+notifications: true
+skipInitialVerify: false
+waitBetweenEnvs: false
+
+wavesToDeploy:
+- - argoworkflow-poc-env1
+  - argoworkflow-poc-env2
+  - argoworkflow-poc-env3
